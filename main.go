@@ -8,5 +8,6 @@ func main() {
 		fmt.Println("another new line")
 		fmt.Println("yet another new line")
 		fmt.Println("and another one")
+		fmt.Println("and another one")
 }
 
