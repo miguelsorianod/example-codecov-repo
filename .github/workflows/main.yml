@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Run coverage
+        run: go test -race -cover -coverprofile=coverage.out -covermode=atomic
+
       - uses: codecov/codecov-action@v2
         with:
           files: ./coverage.out
